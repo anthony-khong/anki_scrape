@@ -15,8 +15,11 @@ if __name__ == '__main__':
 
     flashcard = {'front': [], 'back': []}
     for cells in filtered_rows:
-        flashcard['front'].append(cells[0].text)
-        flashcard['back'] .append(cells[2].text)
+        katakana = cells[0].text
+        flashcard['front'].append(katakana)
+        origin = cells[2].text
+        meaning = cells[3].text
+        flashcard['back'] .append(f'{meaning} [{origin}]')
     df = pd.DataFrame(flashcard)
     df = df[['front', 'back']]
     df.to_csv('katakana_flashcards.csv', index=False, header=False)
