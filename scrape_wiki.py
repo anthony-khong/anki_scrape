@@ -22,4 +22,4 @@ if __name__ == '__main__':
         flashcard['back'] .append(f'{meaning} [{origin}]')
     df = pd.DataFrame(flashcard)
     df = df[['front', 'back']]
-    df.to_csv('katakana_flashcards.csv', index=False, header=False)
+    df.to_csv('katakana_flashcards.csv', sep='\t', index=False, header=False)
