@@ -5,3 +5,5 @@ This is a very simple script to download [Wikipedia's article on loanwords in Ja
 My original intention is to make an Anki deck out of this simple table. The idea is to have the Katakana word in front, and at the back, we have the English translation and the Japanese pronunciation. The latter can be easily added using [AwesomeTTS](https://ankiweb.net/shared/info/301952613) ([GitHub](https://github.com/AwesomeTTS/awesometts-anki-addon)).
 
 To turn this CSV into an Anki deck, go to the deck you want to import these to, then do File > Import... > (select CSV file) > Import.
+
+The resulting CSV and Anki deck along with its AwesomeTTS media files are included in the repository.
